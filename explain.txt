@@ -16,3 +16,4 @@
 - Different than other SunTzu GPT bot: sticks to topic and doesn’t have ChatGPT unrelated fluff
 
 - Main issues I overcame: GitHub, OpenAI api key, knowledge base
+testing change
