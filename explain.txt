@@ -1,0 +1,18 @@
+- Sun Tzu is a famous Chinese general who became popular after writing his book, “The Art of War.”
+
+- born around 544 BC and died around 496 BC
+
+- This book talked about revolutionary military strategies that are still used today
+
+- They often link to modern day business strategies 
+
+- Contains funny/ wise quotes that have been used in pop culture/ movies/technoblade
+
+- Ex."If you know the enemy and know yourself, you need not fear the result of a hundred battles"
+ and "The supreme art of war is to subdue the enemy without fighting."
+
+- Bot purpose: be like Sun Tzu and give guidance
+
+- Different than other SunTzu GPT bot: sticks to topic and doesn’t have ChatGPT unrelated fluff
+
+- Main issues I overcame: GitHub, OpenAI api key, knowledge base
