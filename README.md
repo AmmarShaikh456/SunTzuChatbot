@@ -3,7 +3,11 @@
 ## Description
 
 This repo is for the  SunTzu chatbot which I created during the ALPS Summer Workshop at UTD.
+I used a template from Proffesor Gupta's Concierge bot and developed this.
 
+## Who is Sun Tzu?
+
+Sun Tzu is a military startegists/general 
 
 ## Requirement
 
