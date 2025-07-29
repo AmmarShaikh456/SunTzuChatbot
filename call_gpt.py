@@ -5,8 +5,7 @@ import os
 # client.api_version = "2023-05-15" 
 # client.api_type = "azure"
 # client.api_base = os.getenv("AZURE_client_ENDPOINT")
-#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
-#'sk-proj-oGLqxf3kQYHcmLyMCTXPn1yUlfRzHO_67cacvE1ocRpRJuOtsvSG-NF9yVj4rx0QauUiwlX2gsT3BlbkFJ3A2eRnRc1RLoYgbAmMb--V6ysOLA23QfI3U3Od-J1fkndj3X6JnnKyaVP9J2jIvjJwLxwp5nQ'
+
 api_key = os.getenv("OPENAI_API_KEY")
 if api_key is None:
     raise ValueError("Please set the OPENAI_API_KEY environment variable.")
