@@ -1,8 +1,9 @@
-# Concierge-bot
+# NeoSunTzu
 
 ## Description
 
-This repo is for the project NeoSunTzu chatbot
+This repo is for the  SunTzu chatbot which I created during the ALPS Summer Workshop at UTD.
+
 
 ## Requirement
 
