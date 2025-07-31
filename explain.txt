@@ -1,3 +1,8 @@
+
+
+Neo Sun Tzu
+
+
 - Sun Tzu is a famous Chinese general who became popular after writing his book, “The Art of War.”
 
 - born around 544 BC and died around 496 BC
@@ -11,9 +16,14 @@
 - Ex."If you know the enemy and know yourself, you need not fear the result of a hundred battles"
  and "The supreme art of war is to subdue the enemy without fighting."
 
-- Bot purpose: be like Sun Tzu and give guidance
+- Bot purpose: Be like Sun Tzu and give guidance
+
+- How it works:
+     - quote(ID, Category, MainIdea, BusinessUse, Context, 'Advice', 'Quote text.').
+     - Grabs semantics from the quotes, categories, or main idea to understand the problem
+     - gives concise straightforward advice based on Sun Tzu's strategic thinking
+     - applies knowledge on modern topics like Buisness, Law, or Tech
 
 - Different than other SunTzu GPT bot: sticks to topic and doesn’t have ChatGPT unrelated fluff
 
-- Main issues I overcame: GitHub, OpenAI api key, knowledge base
-testing change
+- Main issues I overcame: GitHub, OpenAI api key, replacing restaurant bot logic
