@@ -24,6 +24,12 @@ Neo Sun Tzu
      - gives concise straightforward advice based on Sun Tzu's strategic thinking
      - applies knowledge on modern topics like Buisness, Law, or Tech
 
-- Different than other SunTzu GPT bot: sticks to topic and doesn’t have ChatGPT unrelated fluff
+- Different than other SunTzu GPT bots: sticks to topic and doesn’t have ChatGPT unrelated fluff
 
 - Main issues I overcame: GitHub, OpenAI api key, replacing restaurant bot logic
+
+- Potential Future Improvements:
+     - Diaplay on a Website w Flask, HTML, CSS, 
+     - Add more predicates to the knowledge base
+     - Clean up code
+
