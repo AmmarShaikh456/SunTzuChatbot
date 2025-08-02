@@ -1,6 +1,6 @@
 import subprocess
 import utils
-from preference import get_prefer
+
 import os
 
 class reasoner():
@@ -93,9 +93,9 @@ class reasoner():
 
         #update preference rules
         prefer = list(set(prefer))
-        add_prefer_rule = get_prefer(self.preference_path, prefer)
+        # Preference logic removed (get_prefer no longer exists)
         with open(self.extra_preference_path, 'w') as f:
-            f.write(add_prefer_rule)
+            f.write('')
         
         # update requirements
         with open(self.command_path, 'w') as f:
@@ -229,9 +229,3 @@ class reasoner():
         return output
 
 
-if __name__ == "__main__":
-    names = ['data/info_list.pl', 'data/state.pl', 'data/knowledge.pl', 'src/functions.pl', 'src/update.pl', 'src/preference.pl', 'src/extra_preference.pl', 'src/results.pl', 'data/log.pl', 'src/query.pl']
-    r = reasoner(names)
-    
-    prefer = ['kebob']
-    print(get_prefer(r.preference_path, prefer))

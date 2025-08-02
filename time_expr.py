@@ -2,38 +2,36 @@ from call_gpt import predicate_gen, sentence_diversity, sentence_gen
 from reasoner import reasoner
 from filter import get_predicates, filter
 
+
+
 import time
 
-paths = ['data/info_list.pl', 'data/state.pl', 'data/knowledge.pl', 'src/functions.pl', 'src/results.pl', 'src/query.pl']
-
+paths = [
+    'data/info_list.pl',
+    'data/state.pl',
+    'data/knowledge.pl',
+    'src/functions.pl',
+    'src/update.pl',
+    'src/preference.pl',
+    'src/extra_preference.pl',
+    'src/results.pl',
+    'data/log.pl',
+    'src/query.pl'
+]
 attrs, values = get_predicates()
-
-session_continues = True
+r = reasoner(paths)
 mode = 'recommend'
 reply = 'Hello what can I do for you?'
-end_time = 0
-start_time = 0
 total = 0
-#while(session_continues):
-for i in range(10):
-
-    reply = sentence_diversity(reply).strip()
-    total_time = end_time - start_time
-    print("Execution time:", total_time, "seconds")
+num_runs = 10
+for i in range(num_runs):
     print('\nSun Tzu:\n' + reply + '\n\nYou: ')
-    total += total_time
-    r = reasoner(paths)
     query = 'What is the best strategy for overcoming obstacles in business?'
-    start_time = time.time()
-    if query == 'end':
-        session_continues = False
-        continue
-
     if mode == 'ask':
         query = reply + query
+    start_time = time.time()
     query_predicates = predicate_gen(query).strip()
     query_predicates = filter(query_predicates, attrs, values)
-
     if query_predicates == 'irrelevant.':
         reply = 'This question is beyond my strategic wisdom. Please ask about leadership, business, or strategy.'
     elif query_predicates == 'thank.':
@@ -51,5 +49,8 @@ for i in range(10):
             if mode == 'recommend':
                 reply = sentence_gen(reply_predicates['Output'][1:-1]).strip()
     end_time = time.time()
-total /= 10
-print('Average execution time: ', total, ' seconds')
+    total_time = end_time - start_time
+    print("Execution time:", total_time, "seconds")
+    total += total_time
+avg = total / num_runs
+print('Average execution time: ', avg, ' seconds')
